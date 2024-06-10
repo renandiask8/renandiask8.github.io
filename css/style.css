@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+body{
+    background: #d2d2c1 url(/midia/fundo.png);
+    height: 100vw;
+}
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+h2.titulo{
+    color: #342d2d;
+    font-size: 38px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+
+
+/* Parte do menu do inicio*/ 
+header {
+    padding: 30px 4%;
+}
+
+header > .interface {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #4f4f4f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 20px 40px;  
+}
+button:hover, form .botao-enviar input:hover {
+    box-shadow: 0px 0px 8px #8b8b8b;
+    transform: scale(1.05);
+}
+
+
+
+/* Parte principal home do site */
+
+.botao-contato button {
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 25px;
+    background-color: #a0a08c;
+}
+
+a:hover ,button:hover {
+    color: rgb(255, 255, 255);
+  
+
+}
+
+section.topo-site {
+    padding: 50px 4%;
+
+}
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-site h1{
+    color: #342d2d;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-site .texto-topo p{
+    color: #342d2d;
+    margin: 40px 0;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+.topo-site .imagem-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/*Parte principal da parte profissional*/
+
+section.profissional {
+    padding: 70px 4%;
+    background-color: #dadaca;
+}
+.profissional .txt-prof h2{
+    margin-bottom: 30px;
+}
+.profissional .txt-prof{
+    color: #342d2d;
+}
+section.profissional .flex{
+    align-items: center;
+    gap: 60px;
+}
+.profissional .txt-prof p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.profissional .txt-prof ul li{
+    padding: 2px;
+}
+.redes button{
+    
+    background-color:  #a0a08c;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 24px;
+    transition: .2s;
+    cursor: pointer;
+    border: none;
+    margin: 0 5px;
+}
+
+
+/* Parte principal do Sobre mim */
+
+section.sobre {
+    padding: 70px 4%;
+    background-color:  #dadaca;
+}
+section.sobre .flex{
+    gap: 60px;
+}
+.sobre .sobre-box{
+    border-radius: 30px;
+    color: #342d2d;
+    padding: 40px;
+    border: 2px solid #d2d2c1;
+    margin-top: 45px;
+    transition: .2s;
+}
+.sobre .sobre-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px  #bfbfae6d;
+}
+.sobre .sobre-box i{
+    font-size: 70px;
+    color: #000000;
+}
+.sobre .sobre-box h3{
+    font-size: 30px;
+    margin: 14px 0;
+}
+
+/* Parte principal da parte Portifolio */
+
+section.portifolio{
+    padding: 70px 4%;
+    box-shadow: 0 0 40px 10px #ffffff75;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top:50px ;
+}
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-image: url(./porti.png);
+    border-radius: 50px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 50px;
+    transition: 3s;
+}
+.img-port2 {
+    width: 360px;
+    height: 460px;
+    background-image: url(./porti2.png);
+    border-radius: 50px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 50px;
+    transition: 3s;
+}
+.img-port:hover{
+   background-position: 100% 100%; 
+}
+.img-port2:hover{
+    background-position: 100% 100%;
+}
+section.portifolio p{
+    text-align: center;
+    margin: 14px 0;
+}
+/* parte do Formulario */
+
+section.formulario {
+    padding: 70px 4%;
+}
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form input, form textarea {
+    width: 100%;
+    background-color: #fffdfd;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #000000;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+}
+form textarea{
+    resize: none;
+}
+form .botao-enviar{
+    margin-top: 25px;
+    text-align: center;
+}
+form .botao-enviar input{
+    background-color: #a0a08c;
+    color: #000000;
+    width: 120px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+/* Todo css do rodape da pagina*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #342d2d;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .rodape{
+    padding: 20px 0;
+}
+footer .rodape p i{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+footer .rodape p a{
+    color:  #4f4f4f;
+}
+.borda{
+    border-top: 2px solid #342d2d;
+
+}
+
+
